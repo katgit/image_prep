@@ -1,5 +1,5 @@
 #!/bin/bash -l
-
+#-------
 
 #Calculate number of line
 N="$(wc -l $1 | cut -d" " -f1)"
