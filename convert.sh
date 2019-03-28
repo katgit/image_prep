@@ -1,5 +1,7 @@
 #!/bin/bash -l
 
+
+#Calculate number of line
 N="$(wc -l $1 | cut -d" " -f1)"
 
 HEIGHT="$(($N*25))"
@@ -10,4 +12,3 @@ echo '"' >>tmp
 
 convert -size 1200x$HEIGHT xc:white -font Courier -pointsize 16 -fill black -draw @tmp $2
 
-rm tmp
